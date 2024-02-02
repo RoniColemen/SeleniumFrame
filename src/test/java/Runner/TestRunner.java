@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/java/FeatureFiles", //defines the features folder
-        glue = { "StepDef", "Utils"}, //defines step definitions and utility folder
-        plugin = {"pretty", "html:target/cucumber-html-report", "json:cucumber-json"} //For reports
+        glue = { "Utils", "StepDef"}, //defines step definitions and utility folder
+        plugin = {"pretty", "html:target/cucumber-html-report", "json:cucumber.json"} //For reports
 )
 public class TestRunner {
 
